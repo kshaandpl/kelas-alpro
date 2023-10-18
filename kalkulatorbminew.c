@@ -45,5 +45,6 @@ int main() {
             default :
             printf("Pilihan jenis kelamin tidak valid. \n");
             break;
+	return 0;
     }
 }
