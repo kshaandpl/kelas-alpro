@@ -1,0 +1,29 @@
+#include<stdio.h>
+
+int main(){
+    int data, jumlah=0, ratarata, max=0, min=100;
+    int i=0;
+    
+    for (int i = 1; i <= 3; ++i) {
+        printf("Input data ke-%d : ", i);
+        scanf("%d", &data);
+
+        jumlah += data;
+        
+        if (data > max) {
+            max = data;
+        }
+
+        if (data < min) {
+            min = data;
+        }
+    }
+
+    ratarata = jumlah / 3;
+
+    printf("\nRata rata data : %d\n", ratarata);
+    printf("Nilai max : %d\n", max);
+    printf("Nilai min : %d\n", min);
+
+    return 0;
+}
